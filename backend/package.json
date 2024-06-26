@@ -1,0 +1,32 @@
+{
+  "name": "fresha-plant-pos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seeds": "node migrations/seeds.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oceanscan-Limited/Fresha-Plant-POS.git"
+  },
+  "author": "JahsonKim (https://github.com/JahsonKim)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oceanscan-Limited/Fresha-Plant-POS/issues"
+  },
+  "homepage": "https://github.com/Oceanscan-Limited/Fresha-Plant-POS#readme",
+  "dependencies": {
+    "async": "^3.2.5",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "mysql2": "^3.10.1",
+    "sequelize": "^6.37.3"
+  }
+}
