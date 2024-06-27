@@ -8,6 +8,8 @@ import { fileURLToPath } from 'url'
 import OrderHandler from './OrderHandler.js' 
 import authenticate from '../middleware/AuthMiddleware.js'
 import UserHandler from './UserHandler.js'
+import ShopHandler from './ShopHandler.js'
+
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export function init(app) {
@@ -30,6 +32,7 @@ export function init(app) {
  
   router.use('/orders', authenticate,OrderHandler) 
   router.use('/users', UserHandler) 
+  router.use('/shops', ShopHandler)
 
   router.all('/', function (request, res) {
     res.status(404)
